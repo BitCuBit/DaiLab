@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5325583D16BAB163009D47DE /* BACK.png in Resources */ = {isa = PBXBuildFile; fileRef = 5325583716BAB163009D47DE /* BACK.png */; };
+		5325583E16BAB163009D47DE /* BOTTOM.png in Resources */ = {isa = PBXBuildFile; fileRef = 5325583816BAB163009D47DE /* BOTTOM.png */; };
+		5325583F16BAB163009D47DE /* FRONT.png in Resources */ = {isa = PBXBuildFile; fileRef = 5325583916BAB163009D47DE /* FRONT.png */; };
+		5325584016BAB163009D47DE /* LEFT.png in Resources */ = {isa = PBXBuildFile; fileRef = 5325583A16BAB163009D47DE /* LEFT.png */; };
+		5325584116BAB163009D47DE /* RIGHT.png in Resources */ = {isa = PBXBuildFile; fileRef = 5325583B16BAB163009D47DE /* RIGHT.png */; };
+		5325584216BAB163009D47DE /* TOP.png in Resources */ = {isa = PBXBuildFile; fileRef = 5325583C16BAB163009D47DE /* TOP.png */; };
+		5325584516BAB34A009D47DE /* DAILabSceneLivingRoom.m in Sources */ = {isa = PBXBuildFile; fileRef = 5325584416BAB34A009D47DE /* DAILabSceneLivingRoom.m */; };
+		5325584716BAB538009D47DE /* DAIlogoLargeIcon_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 5325584616BAB538009D47DE /* DAIlogoLargeIcon_iPad.png */; };
 		535F748A16BA95DC00628BB3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 535F748916BA95DC00628BB3 /* UIKit.framework */; };
 		535F748C16BA95DC00628BB3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 535F748B16BA95DC00628BB3 /* Foundation.framework */; };
 		535F748E16BA95DC00628BB3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 535F748D16BA95DC00628BB3 /* CoreGraphics.framework */; };
@@ -18,10 +26,52 @@
 		535F74A016BA95DC00628BB3 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 535F749F16BA95DC00628BB3 /* Default-568h@2x.png */; };
 		535F74A316BA95DC00628BB3 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 535F74A116BA95DC00628BB3 /* MainStoryboard_iPhone.storyboard */; };
 		535F74A616BA95DC00628BB3 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 535F74A416BA95DC00628BB3 /* MainStoryboard_iPad.storyboard */; };
-		535F74A916BA95DC00628BB3 /* DAILabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 535F74A816BA95DC00628BB3 /* DAILabViewController.m */; };
+		535F74B216BA965500628BB3 /* DAILabPrincipalViewController_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 535F74B116BA965500628BB3 /* DAILabPrincipalViewController_iPad.m */; };
+		535F74B516BA967700628BB3 /* DAILabPrincipalViewController_iPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 535F74B416BA967700628BB3 /* DAILabPrincipalViewController_iPhone.m */; };
+		535F74B816BA96D400628BB3 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 535F74B716BA96D400628BB3 /* GLKit.framework */; };
+		535F74BA16BA96DA00628BB3 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 535F74B916BA96DA00628BB3 /* QuartzCore.framework */; };
+		535F74BC16BA96DF00628BB3 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 535F74BB16BA96DF00628BB3 /* OpenGLES.framework */; };
+		535F74BE16BA970B00628BB3 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 535F74BD16BA970B00628BB3 /* CoreMotion.framework */; };
+		536F0AB516BC215D005D0F58 /* BathRoom_Planta.png in Resources */ = {isa = PBXBuildFile; fileRef = 536F0AB216BC215D005D0F58 /* BathRoom_Planta.png */; };
+		536F0AB616BC215D005D0F58 /* LivingRoom_Planta.png in Resources */ = {isa = PBXBuildFile; fileRef = 536F0AB316BC215D005D0F58 /* LivingRoom_Planta.png */; };
+		536F0AB716BC215D005D0F58 /* Room_Planta.png in Resources */ = {isa = PBXBuildFile; fileRef = 536F0AB416BC215D005D0F58 /* Room_Planta.png */; };
+		536F0AB916BC241E005D0F58 /* Logo_DAIlab 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 536F0AB816BC241E005D0F58 /* Logo_DAIlab 2.png */; };
+		536FB2FC16BBD40400AC773F /* LivingRoom.png in Resources */ = {isa = PBXBuildFile; fileRef = 536FB2FB16BBD40400AC773F /* LivingRoom.png */; };
+		536FB2FE16BBD4C300AC773F /* House.png in Resources */ = {isa = PBXBuildFile; fileRef = 536FB2FD16BBD4C300AC773F /* House.png */; };
+		536FB30116BBD96200AC773F /* Room.png in Resources */ = {isa = PBXBuildFile; fileRef = 536FB30016BBD96200AC773F /* Room.png */; };
+		536FB30316BBDA1000AC773F /* BathRoom.png in Resources */ = {isa = PBXBuildFile; fileRef = 536FB30216BBDA1000AC773F /* BathRoom.png */; };
+		536FB30616BBDBB800AC773F /* DAILabRoomViewController_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 536FB30516BBDBB800AC773F /* DAILabRoomViewController_iPad.m */; };
+		536FB30916BBDBDF00AC773F /* DAILabBathRoomViewController_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 536FB30816BBDBDF00AC773F /* DAILabBathRoomViewController_iPad.m */; };
+		536FB30C16BBDBF900AC773F /* DAILabBathRoomViewController_iPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 536FB30B16BBDBF900AC773F /* DAILabBathRoomViewController_iPhone.m */; };
+		536FB30F16BBDC1300AC773F /* DAILabRoomViewController_iPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 536FB30E16BBDC1300AC773F /* DAILabRoomViewController_iPhone.m */; };
+		536FB31916BBDD0300AC773F /* BACK_Room.png in Resources */ = {isa = PBXBuildFile; fileRef = 536FB31316BBDD0300AC773F /* BACK_Room.png */; };
+		536FB31A16BBDD0300AC773F /* BOTTOM_Room.png in Resources */ = {isa = PBXBuildFile; fileRef = 536FB31416BBDD0300AC773F /* BOTTOM_Room.png */; };
+		536FB31B16BBDD0300AC773F /* FRONT_Room.png in Resources */ = {isa = PBXBuildFile; fileRef = 536FB31516BBDD0300AC773F /* FRONT_Room.png */; };
+		536FB31C16BBDD0300AC773F /* LEFT_Room.png in Resources */ = {isa = PBXBuildFile; fileRef = 536FB31616BBDD0300AC773F /* LEFT_Room.png */; };
+		536FB31D16BBDD0300AC773F /* RIGHT_Room.png in Resources */ = {isa = PBXBuildFile; fileRef = 536FB31716BBDD0300AC773F /* RIGHT_Room.png */; };
+		536FB31E16BBDD0300AC773F /* TOP_Room.png in Resources */ = {isa = PBXBuildFile; fileRef = 536FB31816BBDD0300AC773F /* TOP_Room.png */; };
+		536FB32716BBDD9A00AC773F /* BACK_BathRoom.png in Resources */ = {isa = PBXBuildFile; fileRef = 536FB32116BBDD9A00AC773F /* BACK_BathRoom.png */; };
+		536FB32816BBDD9A00AC773F /* BOTTOM_BathRoom.png in Resources */ = {isa = PBXBuildFile; fileRef = 536FB32216BBDD9A00AC773F /* BOTTOM_BathRoom.png */; };
+		536FB32916BBDD9A00AC773F /* FRONT_BathRoom.png in Resources */ = {isa = PBXBuildFile; fileRef = 536FB32316BBDD9A00AC773F /* FRONT_BathRoom.png */; };
+		536FB32A16BBDD9A00AC773F /* LEFT_BathRoom.png in Resources */ = {isa = PBXBuildFile; fileRef = 536FB32416BBDD9A00AC773F /* LEFT_BathRoom.png */; };
+		536FB32B16BBDD9A00AC773F /* RIGHT_BathRoom.png in Resources */ = {isa = PBXBuildFile; fileRef = 536FB32516BBDD9A00AC773F /* RIGHT_BathRoom.png */; };
+		536FB32C16BBDD9A00AC773F /* TOP_BathRoom.png in Resources */ = {isa = PBXBuildFile; fileRef = 536FB32616BBDD9A00AC773F /* TOP_BathRoom.png */; };
+		536FB32F16BBE7C700AC773F /* DAILabSceneRoom.m in Sources */ = {isa = PBXBuildFile; fileRef = 536FB32E16BBE7C700AC773F /* DAILabSceneRoom.m */; };
+		536FB33216BBE9D000AC773F /* DAILabSceneBathRoom.m in Sources */ = {isa = PBXBuildFile; fileRef = 536FB33116BBE9D000AC773F /* DAILabSceneBathRoom.m */; };
+		536FB33516BC0AEF00AC773F /* DAILabMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 536FB33416BC0AEF00AC773F /* DAILabMapViewController.m */; };
+		536FB33716BC0BC300AC773F /* PLANTA.png in Resources */ = {isa = PBXBuildFile; fileRef = 536FB33616BC0BC300AC773F /* PLANTA.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5325583716BAB163009D47DE /* BACK.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BACK.png; sourceTree = "<group>"; };
+		5325583816BAB163009D47DE /* BOTTOM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BOTTOM.png; sourceTree = "<group>"; };
+		5325583916BAB163009D47DE /* FRONT.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FRONT.png; sourceTree = "<group>"; };
+		5325583A16BAB163009D47DE /* LEFT.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LEFT.png; sourceTree = "<group>"; };
+		5325583B16BAB163009D47DE /* RIGHT.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RIGHT.png; sourceTree = "<group>"; };
+		5325583C16BAB163009D47DE /* TOP.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TOP.png; sourceTree = "<group>"; };
+		5325584316BAB34A009D47DE /* DAILabSceneLivingRoom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DAILabSceneLivingRoom.h; sourceTree = "<group>"; };
+		5325584416BAB34A009D47DE /* DAILabSceneLivingRoom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DAILabSceneLivingRoom.m; sourceTree = "<group>"; };
+		5325584616BAB538009D47DE /* DAIlogoLargeIcon_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DAIlogoLargeIcon_iPad.png; sourceTree = "<group>"; };
 		535F748616BA95DC00628BB3 /* DAILab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DAILab.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		535F748916BA95DC00628BB3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		535F748B16BA95DC00628BB3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -37,8 +87,49 @@
 		535F749F16BA95DC00628BB3 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		535F74A216BA95DC00628BB3 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		535F74A516BA95DC00628BB3 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
-		535F74A716BA95DC00628BB3 /* DAILabViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DAILabViewController.h; sourceTree = "<group>"; };
-		535F74A816BA95DC00628BB3 /* DAILabViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DAILabViewController.m; sourceTree = "<group>"; };
+		535F74B016BA965500628BB3 /* DAILabPrincipalViewController_iPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DAILabPrincipalViewController_iPad.h; sourceTree = "<group>"; };
+		535F74B116BA965500628BB3 /* DAILabPrincipalViewController_iPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DAILabPrincipalViewController_iPad.m; sourceTree = "<group>"; };
+		535F74B316BA967700628BB3 /* DAILabPrincipalViewController_iPhone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DAILabPrincipalViewController_iPhone.h; sourceTree = "<group>"; };
+		535F74B416BA967700628BB3 /* DAILabPrincipalViewController_iPhone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DAILabPrincipalViewController_iPhone.m; sourceTree = "<group>"; };
+		535F74B716BA96D400628BB3 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		535F74B916BA96DA00628BB3 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		535F74BB16BA96DF00628BB3 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		535F74BD16BA970B00628BB3 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		536F0AB216BC215D005D0F58 /* BathRoom_Planta.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BathRoom_Planta.png; sourceTree = "<group>"; };
+		536F0AB316BC215D005D0F58 /* LivingRoom_Planta.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LivingRoom_Planta.png; sourceTree = "<group>"; };
+		536F0AB416BC215D005D0F58 /* Room_Planta.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Room_Planta.png; sourceTree = "<group>"; };
+		536F0AB816BC241E005D0F58 /* Logo_DAIlab 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Logo_DAIlab 2.png"; sourceTree = "<group>"; };
+		536FB2FB16BBD40400AC773F /* LivingRoom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LivingRoom.png; sourceTree = "<group>"; };
+		536FB2FD16BBD4C300AC773F /* House.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = House.png; sourceTree = "<group>"; };
+		536FB30016BBD96200AC773F /* Room.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Room.png; sourceTree = "<group>"; };
+		536FB30216BBDA1000AC773F /* BathRoom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BathRoom.png; sourceTree = "<group>"; };
+		536FB30416BBDBB800AC773F /* DAILabRoomViewController_iPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DAILabRoomViewController_iPad.h; sourceTree = "<group>"; };
+		536FB30516BBDBB800AC773F /* DAILabRoomViewController_iPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DAILabRoomViewController_iPad.m; sourceTree = "<group>"; };
+		536FB30716BBDBDF00AC773F /* DAILabBathRoomViewController_iPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DAILabBathRoomViewController_iPad.h; sourceTree = "<group>"; };
+		536FB30816BBDBDF00AC773F /* DAILabBathRoomViewController_iPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DAILabBathRoomViewController_iPad.m; sourceTree = "<group>"; };
+		536FB30A16BBDBF900AC773F /* DAILabBathRoomViewController_iPhone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DAILabBathRoomViewController_iPhone.h; sourceTree = "<group>"; };
+		536FB30B16BBDBF900AC773F /* DAILabBathRoomViewController_iPhone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DAILabBathRoomViewController_iPhone.m; sourceTree = "<group>"; };
+		536FB30D16BBDC1300AC773F /* DAILabRoomViewController_iPhone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DAILabRoomViewController_iPhone.h; sourceTree = "<group>"; };
+		536FB30E16BBDC1300AC773F /* DAILabRoomViewController_iPhone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DAILabRoomViewController_iPhone.m; sourceTree = "<group>"; };
+		536FB31316BBDD0300AC773F /* BACK_Room.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BACK_Room.png; sourceTree = "<group>"; };
+		536FB31416BBDD0300AC773F /* BOTTOM_Room.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BOTTOM_Room.png; sourceTree = "<group>"; };
+		536FB31516BBDD0300AC773F /* FRONT_Room.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FRONT_Room.png; sourceTree = "<group>"; };
+		536FB31616BBDD0300AC773F /* LEFT_Room.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LEFT_Room.png; sourceTree = "<group>"; };
+		536FB31716BBDD0300AC773F /* RIGHT_Room.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RIGHT_Room.png; sourceTree = "<group>"; };
+		536FB31816BBDD0300AC773F /* TOP_Room.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TOP_Room.png; sourceTree = "<group>"; };
+		536FB32116BBDD9A00AC773F /* BACK_BathRoom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BACK_BathRoom.png; sourceTree = "<group>"; };
+		536FB32216BBDD9A00AC773F /* BOTTOM_BathRoom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BOTTOM_BathRoom.png; sourceTree = "<group>"; };
+		536FB32316BBDD9A00AC773F /* FRONT_BathRoom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FRONT_BathRoom.png; sourceTree = "<group>"; };
+		536FB32416BBDD9A00AC773F /* LEFT_BathRoom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LEFT_BathRoom.png; sourceTree = "<group>"; };
+		536FB32516BBDD9A00AC773F /* RIGHT_BathRoom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RIGHT_BathRoom.png; sourceTree = "<group>"; };
+		536FB32616BBDD9A00AC773F /* TOP_BathRoom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TOP_BathRoom.png; sourceTree = "<group>"; };
+		536FB32D16BBE7C700AC773F /* DAILabSceneRoom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DAILabSceneRoom.h; sourceTree = "<group>"; };
+		536FB32E16BBE7C700AC773F /* DAILabSceneRoom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DAILabSceneRoom.m; sourceTree = "<group>"; };
+		536FB33016BBE9D000AC773F /* DAILabSceneBathRoom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DAILabSceneBathRoom.h; sourceTree = "<group>"; };
+		536FB33116BBE9D000AC773F /* DAILabSceneBathRoom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DAILabSceneBathRoom.m; sourceTree = "<group>"; };
+		536FB33316BC0AEE00AC773F /* DAILabMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DAILabMapViewController.h; sourceTree = "<group>"; };
+		536FB33416BC0AEF00AC773F /* DAILabMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DAILabMapViewController.m; sourceTree = "<group>"; };
+		536FB33616BC0BC300AC773F /* PLANTA.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PLANTA.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +137,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				535F74BE16BA970B00628BB3 /* CoreMotion.framework in Frameworks */,
+				535F74BC16BA96DF00628BB3 /* OpenGLES.framework in Frameworks */,
+				535F74BA16BA96DA00628BB3 /* QuartzCore.framework in Frameworks */,
+				535F74B816BA96D400628BB3 /* GLKit.framework in Frameworks */,
 				535F748A16BA95DC00628BB3 /* UIKit.framework in Frameworks */,
 				535F748C16BA95DC00628BB3 /* Foundation.framework in Frameworks */,
 				535F748E16BA95DC00628BB3 /* CoreGraphics.framework in Frameworks */,
@@ -58,6 +153,9 @@
 		535F747D16BA95DC00628BB3 = {
 			isa = PBXGroup;
 			children = (
+				535F74C216BA9CA600628BB3 /* Scenes */,
+				535F74B616BA968C00628BB3 /* Classes */,
+				535F74AF16BA962300628BB3 /* Images */,
 				535F748F16BA95DC00628BB3 /* DAILab */,
 				535F748816BA95DC00628BB3 /* Frameworks */,
 				535F748716BA95DC00628BB3 /* Products */,
@@ -75,6 +173,10 @@
 		535F748816BA95DC00628BB3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				535F74BD16BA970B00628BB3 /* CoreMotion.framework */,
+				535F74BB16BA96DF00628BB3 /* OpenGLES.framework */,
+				535F74B916BA96DA00628BB3 /* QuartzCore.framework */,
+				535F74B716BA96D400628BB3 /* GLKit.framework */,
 				535F748916BA95DC00628BB3 /* UIKit.framework */,
 				535F748B16BA95DC00628BB3 /* Foundation.framework */,
 				535F748D16BA95DC00628BB3 /* CoreGraphics.framework */,
@@ -89,8 +191,6 @@
 				535F749916BA95DC00628BB3 /* DAILabAppDelegate.m */,
 				535F74A116BA95DC00628BB3 /* MainStoryboard_iPhone.storyboard */,
 				535F74A416BA95DC00628BB3 /* MainStoryboard_iPad.storyboard */,
-				535F74A716BA95DC00628BB3 /* DAILabViewController.h */,
-				535F74A816BA95DC00628BB3 /* DAILabViewController.m */,
 				535F749016BA95DC00628BB3 /* Supporting Files */,
 			);
 			path = DAILab;
@@ -108,6 +208,139 @@
 				535F749F16BA95DC00628BB3 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		535F74AF16BA962300628BB3 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				536F0AB216BC215D005D0F58 /* BathRoom_Planta.png */,
+				536F0AB316BC215D005D0F58 /* LivingRoom_Planta.png */,
+				536F0AB416BC215D005D0F58 /* Room_Planta.png */,
+				536FB33616BC0BC300AC773F /* PLANTA.png */,
+				536FB2FA16BBD18100AC773F /* Icons */,
+				536FB32016BBDD1A00AC773F /* BathRoom */,
+				536FB31F16BBDD0600AC773F /* Room */,
+				536FB2FF16BBD92A00AC773F /* LivingRoom */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		535F74B616BA968C00628BB3 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				53FA868916BFD1C600E95923 /* Principal */,
+				536FB31216BBDC2700AC773F /* LivingRoom */,
+				536FB31116BBDC1F00AC773F /* Room */,
+				536FB31016BBDC1700AC773F /* BathRoom */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		535F74C216BA9CA600628BB3 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				536FB33016BBE9D000AC773F /* DAILabSceneBathRoom.h */,
+				536FB33116BBE9D000AC773F /* DAILabSceneBathRoom.m */,
+				536FB32D16BBE7C700AC773F /* DAILabSceneRoom.h */,
+				536FB32E16BBE7C700AC773F /* DAILabSceneRoom.m */,
+				5325584316BAB34A009D47DE /* DAILabSceneLivingRoom.h */,
+				5325584416BAB34A009D47DE /* DAILabSceneLivingRoom.m */,
+			);
+			name = Scenes;
+			sourceTree = "<group>";
+		};
+		536FB2FA16BBD18100AC773F /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				536F0AB816BC241E005D0F58 /* Logo_DAIlab 2.png */,
+				536FB30216BBDA1000AC773F /* BathRoom.png */,
+				536FB30016BBD96200AC773F /* Room.png */,
+				536FB2FB16BBD40400AC773F /* LivingRoom.png */,
+				536FB2FD16BBD4C300AC773F /* House.png */,
+				5325584616BAB538009D47DE /* DAIlogoLargeIcon_iPad.png */,
+			);
+			name = Icons;
+			sourceTree = "<group>";
+		};
+		536FB2FF16BBD92A00AC773F /* LivingRoom */ = {
+			isa = PBXGroup;
+			children = (
+				5325583716BAB163009D47DE /* BACK.png */,
+				5325583816BAB163009D47DE /* BOTTOM.png */,
+				5325583916BAB163009D47DE /* FRONT.png */,
+				5325583A16BAB163009D47DE /* LEFT.png */,
+				5325583B16BAB163009D47DE /* RIGHT.png */,
+				5325583C16BAB163009D47DE /* TOP.png */,
+			);
+			name = LivingRoom;
+			sourceTree = "<group>";
+		};
+		536FB31016BBDC1700AC773F /* BathRoom */ = {
+			isa = PBXGroup;
+			children = (
+				536FB30716BBDBDF00AC773F /* DAILabBathRoomViewController_iPad.h */,
+				536FB30816BBDBDF00AC773F /* DAILabBathRoomViewController_iPad.m */,
+				536FB30A16BBDBF900AC773F /* DAILabBathRoomViewController_iPhone.h */,
+				536FB30B16BBDBF900AC773F /* DAILabBathRoomViewController_iPhone.m */,
+			);
+			name = BathRoom;
+			sourceTree = "<group>";
+		};
+		536FB31116BBDC1F00AC773F /* Room */ = {
+			isa = PBXGroup;
+			children = (
+				536FB30416BBDBB800AC773F /* DAILabRoomViewController_iPad.h */,
+				536FB30516BBDBB800AC773F /* DAILabRoomViewController_iPad.m */,
+				536FB30D16BBDC1300AC773F /* DAILabRoomViewController_iPhone.h */,
+				536FB30E16BBDC1300AC773F /* DAILabRoomViewController_iPhone.m */,
+			);
+			name = Room;
+			sourceTree = "<group>";
+		};
+		536FB31216BBDC2700AC773F /* LivingRoom */ = {
+			isa = PBXGroup;
+			children = (
+				535F74B316BA967700628BB3 /* DAILabPrincipalViewController_iPhone.h */,
+				535F74B416BA967700628BB3 /* DAILabPrincipalViewController_iPhone.m */,
+				535F74B016BA965500628BB3 /* DAILabPrincipalViewController_iPad.h */,
+				535F74B116BA965500628BB3 /* DAILabPrincipalViewController_iPad.m */,
+			);
+			name = LivingRoom;
+			sourceTree = "<group>";
+		};
+		536FB31F16BBDD0600AC773F /* Room */ = {
+			isa = PBXGroup;
+			children = (
+				536FB31316BBDD0300AC773F /* BACK_Room.png */,
+				536FB31416BBDD0300AC773F /* BOTTOM_Room.png */,
+				536FB31516BBDD0300AC773F /* FRONT_Room.png */,
+				536FB31616BBDD0300AC773F /* LEFT_Room.png */,
+				536FB31716BBDD0300AC773F /* RIGHT_Room.png */,
+				536FB31816BBDD0300AC773F /* TOP_Room.png */,
+			);
+			name = Room;
+			sourceTree = "<group>";
+		};
+		536FB32016BBDD1A00AC773F /* BathRoom */ = {
+			isa = PBXGroup;
+			children = (
+				536FB32116BBDD9A00AC773F /* BACK_BathRoom.png */,
+				536FB32216BBDD9A00AC773F /* BOTTOM_BathRoom.png */,
+				536FB32316BBDD9A00AC773F /* FRONT_BathRoom.png */,
+				536FB32416BBDD9A00AC773F /* LEFT_BathRoom.png */,
+				536FB32516BBDD9A00AC773F /* RIGHT_BathRoom.png */,
+				536FB32616BBDD9A00AC773F /* TOP_BathRoom.png */,
+			);
+			name = BathRoom;
+			sourceTree = "<group>";
+		};
+		53FA868916BFD1C600E95923 /* Principal */ = {
+			isa = PBXGroup;
+			children = (
+				536FB33316BC0AEE00AC773F /* DAILabMapViewController.h */,
+				536FB33416BC0AEF00AC773F /* DAILabMapViewController.m */,
+			);
+			name = Principal;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,6 +401,34 @@
 				535F74A016BA95DC00628BB3 /* Default-568h@2x.png in Resources */,
 				535F74A316BA95DC00628BB3 /* MainStoryboard_iPhone.storyboard in Resources */,
 				535F74A616BA95DC00628BB3 /* MainStoryboard_iPad.storyboard in Resources */,
+				5325583D16BAB163009D47DE /* BACK.png in Resources */,
+				5325583E16BAB163009D47DE /* BOTTOM.png in Resources */,
+				5325583F16BAB163009D47DE /* FRONT.png in Resources */,
+				5325584016BAB163009D47DE /* LEFT.png in Resources */,
+				5325584116BAB163009D47DE /* RIGHT.png in Resources */,
+				5325584216BAB163009D47DE /* TOP.png in Resources */,
+				5325584716BAB538009D47DE /* DAIlogoLargeIcon_iPad.png in Resources */,
+				536FB2FC16BBD40400AC773F /* LivingRoom.png in Resources */,
+				536FB2FE16BBD4C300AC773F /* House.png in Resources */,
+				536FB30116BBD96200AC773F /* Room.png in Resources */,
+				536FB30316BBDA1000AC773F /* BathRoom.png in Resources */,
+				536FB31916BBDD0300AC773F /* BACK_Room.png in Resources */,
+				536FB31A16BBDD0300AC773F /* BOTTOM_Room.png in Resources */,
+				536FB31B16BBDD0300AC773F /* FRONT_Room.png in Resources */,
+				536FB31C16BBDD0300AC773F /* LEFT_Room.png in Resources */,
+				536FB31D16BBDD0300AC773F /* RIGHT_Room.png in Resources */,
+				536FB31E16BBDD0300AC773F /* TOP_Room.png in Resources */,
+				536FB32716BBDD9A00AC773F /* BACK_BathRoom.png in Resources */,
+				536FB32816BBDD9A00AC773F /* BOTTOM_BathRoom.png in Resources */,
+				536FB32916BBDD9A00AC773F /* FRONT_BathRoom.png in Resources */,
+				536FB32A16BBDD9A00AC773F /* LEFT_BathRoom.png in Resources */,
+				536FB32B16BBDD9A00AC773F /* RIGHT_BathRoom.png in Resources */,
+				536FB32C16BBDD9A00AC773F /* TOP_BathRoom.png in Resources */,
+				536FB33716BC0BC300AC773F /* PLANTA.png in Resources */,
+				536F0AB516BC215D005D0F58 /* BathRoom_Planta.png in Resources */,
+				536F0AB616BC215D005D0F58 /* LivingRoom_Planta.png in Resources */,
+				536F0AB716BC215D005D0F58 /* Room_Planta.png in Resources */,
+				536F0AB916BC241E005D0F58 /* Logo_DAIlab 2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -180,7 +441,16 @@
 			files = (
 				535F749616BA95DC00628BB3 /* main.m in Sources */,
 				535F749A16BA95DC00628BB3 /* DAILabAppDelegate.m in Sources */,
-				535F74A916BA95DC00628BB3 /* DAILabViewController.m in Sources */,
+				535F74B216BA965500628BB3 /* DAILabPrincipalViewController_iPad.m in Sources */,
+				535F74B516BA967700628BB3 /* DAILabPrincipalViewController_iPhone.m in Sources */,
+				5325584516BAB34A009D47DE /* DAILabSceneLivingRoom.m in Sources */,
+				536FB30616BBDBB800AC773F /* DAILabRoomViewController_iPad.m in Sources */,
+				536FB30916BBDBDF00AC773F /* DAILabBathRoomViewController_iPad.m in Sources */,
+				536FB30C16BBDBF900AC773F /* DAILabBathRoomViewController_iPhone.m in Sources */,
+				536FB30F16BBDC1300AC773F /* DAILabRoomViewController_iPhone.m in Sources */,
+				536FB32F16BBE7C700AC773F /* DAILabSceneRoom.m in Sources */,
+				536FB33216BBE9D000AC773F /* DAILabSceneBathRoom.m in Sources */,
+				536FB33516BC0AEF00AC773F /* DAILabMapViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +548,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DAILab/DAILab-Prefix.pch";
 				INFOPLIST_FILE = "DAILab/DAILab-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -289,6 +560,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DAILab/DAILab-Prefix.pch";
 				INFOPLIST_FILE = "DAILab/DAILab-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -313,6 +585,7 @@
 				535F74AE16BA95DC00628BB3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
