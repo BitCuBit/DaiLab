@@ -169,19 +169,17 @@
 
     [self loadCoordinateTexture];
     
-    GLKMatrix4 matrix = GLKMatrix4Multiply(GLKMatrix4MakeXRotation(factorUpDown),GLKMatrix4MakeYRotation(factor));
     
-    baseEffect.transform.modelviewMatrix = GLKMatrix4Multiply(GLKMatrix4MakeLookAt(0, 0, 0, 0, 0, -1, 0, 1, 0), matrix);
+    GLKMatrix4 matrix = GLKMatrix4Multiply(GLKMatrix4MakeXRotation(factorUpDown),GLKMatrix4MakeYRotation(factor));
+
+    baseEffect.transform.modelviewMatrix = GLKMatrix4Multiply(GLKMatrix4MakeLookAt(0, 0, -5, 0, 0, -1, 0, 1, 0), matrix);
     // Perspectiva 60º
     baseEffect.transform.projectionMatrix = GLKMatrix4MakePerspective(1.047, 1024 / 768, 0.1, -20);
+
     
-    
-    //    baseEffect.transform.modelviewMatrix = matrix;
-    // Para mejorar el aspecto de 2/3 del iphone
-    //    baseEffect.transform.projectionMatrix = GLKMatrix4MakeOrtho(-1, 1, -1.5, 1.5, -1, 1);
     
     glEnable(GL_CULL_FACE);
-//    glEnable(GL_DEPTH_TEST);
+
 
     // Habilito textura
     glEnableVertexAttribArray(GLKVertexAttribTexCoord0);
@@ -195,6 +193,8 @@
     // Cara FRONT #########################################
     
     // Texturas
+    baseEffect.texture2d0.envMode = GLKTextureEnvModeModulate;
+    baseEffect.texture2d0.target = GLKTextureTarget2D;
     baseEffect.texture2d0.name = textureFront.name;
     
     [baseEffect prepareToDraw];

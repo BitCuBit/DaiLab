@@ -278,10 +278,10 @@
 		536FB31016BBDC1700AC773F /* BathRoom */ = {
 			isa = PBXGroup;
 			children = (
-				536FB30716BBDBDF00AC773F /* DAILabBathRoomViewController_iPad.h */,
-				536FB30816BBDBDF00AC773F /* DAILabBathRoomViewController_iPad.m */,
 				536FB30A16BBDBF900AC773F /* DAILabBathRoomViewController_iPhone.h */,
 				536FB30B16BBDBF900AC773F /* DAILabBathRoomViewController_iPhone.m */,
+				536FB30716BBDBDF00AC773F /* DAILabBathRoomViewController_iPad.h */,
+				536FB30816BBDBDF00AC773F /* DAILabBathRoomViewController_iPad.m */,
 			);
 			name = BathRoom;
 			sourceTree = "<group>";
@@ -289,10 +289,10 @@
 		536FB31116BBDC1F00AC773F /* Room */ = {
 			isa = PBXGroup;
 			children = (
-				536FB30416BBDBB800AC773F /* DAILabRoomViewController_iPad.h */,
-				536FB30516BBDBB800AC773F /* DAILabRoomViewController_iPad.m */,
 				536FB30D16BBDC1300AC773F /* DAILabRoomViewController_iPhone.h */,
 				536FB30E16BBDC1300AC773F /* DAILabRoomViewController_iPhone.m */,
+				536FB30416BBDBB800AC773F /* DAILabRoomViewController_iPad.h */,
+				536FB30516BBDBB800AC773F /* DAILabRoomViewController_iPad.m */,
 			);
 			name = Room;
 			sourceTree = "<group>";

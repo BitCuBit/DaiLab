@@ -61,6 +61,12 @@
 
 - (void)pinch:(UIPanGestureRecognizer *)gesture {
     [self dismissViewControllerAnimated:YES completion:nil];
+
+}
+- (void)tap:(UIPanGestureRecognizer *)gesture {
+    NSLog(@"Tap detectado");
+
+
 }
 
 - (void) viewDidUnload {
@@ -94,11 +100,11 @@
         [cube updateFactor:0.0];
     
     if (factorUpDown > 0.5) {
-        [cube updateFactorUpDown:0.05];
+        [cube updateFactorUpDown:-0.05];
         
     }
     else if (factorUpDown < -0.5){
-        [cube updateFactorUpDown:-0.05];
+        [cube updateFactorUpDown:0.05];
         
     }
     else

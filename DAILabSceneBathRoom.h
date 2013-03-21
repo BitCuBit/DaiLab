@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <GLKit/GLKit.h>
 
+
 #define M_TAU (2*M_PI)
 
 
@@ -33,5 +34,5 @@
 - (void) render;
 - (void) updateFactor:(float)fact;
 - (void) updateFactorUpDown:(float)fact;
-
+- (void) locationTapInCube:(CGPoint *)point inSize:(CGSize *)size;
 @end

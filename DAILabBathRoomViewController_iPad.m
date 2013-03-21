@@ -51,14 +51,23 @@
     cube = [[DAILabSceneBathRoom alloc] init];
     
     // Añado reconocimiento de arrastre de imagen
-    UIPanGestureRecognizer *panGesture = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(pan:)];
-    [self.view addGestureRecognizer:panGesture];
+    UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tap:)];
+    [self.view addGestureRecognizer:tapGesture];
     UIPinchGestureRecognizer *pinchGesture = [[UIPinchGestureRecognizer alloc] initWithTarget:self action:@selector(pinch:)];
     [self.view addGestureRecognizer:pinchGesture];
 
     
     [self.view addSubview:glView];
 }
+
+- (void)tap:(UITapGestureRecognizer *)gesture {
+
+    CGPoint tapPoint = [gesture locationInView:glView];
+    CGSize size = CGSizeMake(self.view.window.bounds.size.width, self.view.window.bounds.size.height);
+    [cube locationTapInCube:&tapPoint inSize: &size];
+
+}
+
 
 
 
@@ -112,11 +121,11 @@
         [cube updateFactor:0.0];
     
     if (factorUpDown > 0.5) {
-        [cube updateFactorUpDown:0.05];
+        [cube updateFactorUpDown:-0.05];
         
     }
     else if (factorUpDown < -0.5){
-        [cube updateFactorUpDown:-0.05];
+        [cube updateFactorUpDown:0.05];
         
     }
     else

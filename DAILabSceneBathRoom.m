@@ -16,7 +16,7 @@
     self = [super init];
     if (self) {
         position = GLKVector3Make(0, 0, 0);
-        factor = M_PI/2;
+        factor = M_PI;
         factorUpDown = 0.0;
         up = TRUE;
         [self loadTextures];
@@ -75,6 +75,8 @@
     
 }
 
+
+
 - (void) loadCoordinateTexture {
     // Textura
     textureCoordinates = [[NSMutableData dataWithLength:sizeof(GLKVector2)*4] mutableBytes];
@@ -87,8 +89,8 @@
 
 
 - (void) render {
-//    glClearColor(0.5, 0.50, 0.5, 1.0);
-//    glClear(GL_COLOR_BUFFER_BIT);
+    glClearColor(0.5, 0.50, 0.5, 1.0);
+    glClear(GL_COLOR_BUFFER_BIT);
     
     
     GLKVector3 cubeFrontVertices[] = {
@@ -109,6 +111,8 @@
         {-20.0,-20.0,-20.0},
         {20.0,-20.0,-20.0}
     };
+    
+    
     GLKVector3 cubeLeftVertices[] = {
         {20.0,20.0,20.0},
         {20.0,20.0,-20.0},
@@ -129,7 +133,8 @@
         {20.0,20.0,20.0},
         {-20.0,20.0,20.0}
     };
-
+    
+    
     
     GLKVector4 colors[] = {
         GLKVector4Make(1.0, 1.0, 1.0, 1.0), // Red
@@ -170,17 +175,15 @@
     
     GLKMatrix4 matrix = GLKMatrix4Multiply(GLKMatrix4MakeXRotation(factorUpDown),GLKMatrix4MakeYRotation(factor));
     
-    baseEffect.transform.modelviewMatrix = GLKMatrix4Multiply(GLKMatrix4MakeLookAt(0, 0, 0, 0, 0, -1, 0, 1, 0), matrix);
+    baseEffect.transform.modelviewMatrix = GLKMatrix4Multiply(GLKMatrix4MakeLookAt(0, 0, -5, 0, 0, -1, 0, 1, 0), matrix);
     // Perspectiva 60º
     baseEffect.transform.projectionMatrix = GLKMatrix4MakePerspective(1.047, 1024 / 768, 0.1, -20);
     
     
-    baseEffect.transform.modelviewMatrix = matrix;
-    // Para mejorar el aspecto de 2/3 del iphone
-    //    baseEffect.transform.projectionMatrix = GLKMatrix4MakeOrtho(-1, 1, -1.5, 1.5, -1, 1);
+   
     
     glEnable(GL_CULL_FACE);
-    glEnable(GL_DEPTH_TEST);
+
     
     // Habilito textura
     glEnableVertexAttribArray(GLKVertexAttribTexCoord0);
@@ -196,6 +199,7 @@
     // Texturas
     baseEffect.texture2d0.envMode = GLKTextureEnvModeModulate;
     baseEffect.texture2d0.target = GLKTextureTarget2D;
+
     baseEffect.texture2d0.name = textureFront.name;
     
     [baseEffect prepareToDraw];
@@ -210,8 +214,6 @@
     
     // Cara LEFT #########################################
     
-    baseEffect.texture2d0.envMode = GLKTextureEnvModeModulate;
-    baseEffect.texture2d0.target = GLKTextureTarget2D;
     baseEffect.texture2d0.name = textureLeft.name;
     
     [baseEffect prepareToDraw];
@@ -224,8 +226,6 @@
     
     // Cara BACK #########################################
     
-    baseEffect.texture2d0.envMode = GLKTextureEnvModeModulate;
-    baseEffect.texture2d0.target = GLKTextureTarget2D;
     baseEffect.texture2d0.name = textureBack.name;
     
     [baseEffect prepareToDraw];
@@ -236,10 +236,39 @@
     
     glDrawArrays(GL_TRIANGLE_FAN, 0, 4);
     
+    // MIRROR BACK FACE #########################################
+
+    GLKVector3 mirror [] = {
+        {20.0,18.0,-19.5},
+        {-6.0,18.0,-19.5},
+        {-6.0,-4.0,-19.5},
+        {20.0,-4.0,-19.5}
+        
+    };
+
+    // Activo la transparencia
+    glEnable (GL_BLEND);
+    glBlendFunc (GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+
+    //Desactivo color
+    glDisableVertexAttribArray(GLKVertexAttribColor);
+    glDisableVertexAttribArray(GLKVertexAttribTexCoord0);
+
+    baseEffect.useConstantColor = GL_TRUE;
+    baseEffect.constantColor = GLKVector4Make(0.3, 0.7, 1.0, 0.7);
+    [baseEffect prepareToDraw];
+    
+    glEnableVertexAttribArray(GLKVertexAttribPosition);
+    glVertexAttribPointer(GLKVertexAttribPosition, 3, GL_FLOAT, GL_FALSE, 0, mirror);
+    glDrawArrays(GL_TRIANGLE_FAN, 0, 4);
+
+    // Activo Color y textura
+    glEnableVertexAttribArray(GLKVertexAttribColor);
+    glEnableVertexAttribArray(GLKVertexAttribTexCoord0);
+
+
     // Cara BOTTOM #########################################
     
-    baseEffect.texture2d0.envMode = GLKTextureEnvModeModulate;
-    baseEffect.texture2d0.target = GLKTextureTarget2D;
     baseEffect.texture2d0.name = textureBottom.name;
     
     [baseEffect prepareToDraw];
@@ -252,8 +281,6 @@
     
     // Cara RIGHT #########################################
     
-    baseEffect.texture2d0.envMode = GLKTextureEnvModeModulate;
-    baseEffect.texture2d0.target = GLKTextureTarget2D;
     baseEffect.texture2d0.name = textureRight.name;
     
     [baseEffect prepareToDraw];
@@ -267,8 +294,6 @@
     
     // Cara TOP #########################################
     
-    baseEffect.texture2d0.envMode = GLKTextureEnvModeModulate;
-    baseEffect.texture2d0.target = GLKTextureTarget2D;
     baseEffect.texture2d0.name = textureTop.name;
     
     [baseEffect prepareToDraw];
@@ -293,5 +318,25 @@
     textureTop = nil;
     textureRight = nil;
 }
+
+
+- (void) locationTapInCube:(CGPoint *)point inSize:(CGSize *)size {
+
+    float tapX = (int) point->x;
+    float tapY = (int) point->y;
+    NSLog(@"Tap detectado X: %f Y: %f", tapX, tapY);
+
+
+
+
+    
+}
+
+
+
+
+
+
+
 
 @end

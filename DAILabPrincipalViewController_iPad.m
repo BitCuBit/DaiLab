@@ -106,11 +106,11 @@
         [cube updateFactor:0.0];
     
     if (factorUpDown > 0.5) {
-        [cube updateFactorUpDown:0.05];
+        [cube updateFactorUpDown:-0.05];
         
     }
     else if (factorUpDown < -0.5){
-        [cube updateFactorUpDown:-0.05];
+        [cube updateFactorUpDown:0.05];
         
     }
     else
